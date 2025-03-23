@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar ul li {
+    margin-right: 20px;
+}
+
+.top-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-banner {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 2rem;
+}
+
+.stat-box p {
+    font-size: 1rem;
+}
