@@ -1,44 +1,300 @@
-.ui.header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 1px solid var(--black);
-    /* padding-bottom: 15px; */
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.header{
+    position: absolute;
+    width: 1920px;
+    height: 225px;
+    left: 0px;
+    top: 0px;
 }
-
-.ui.header .upper-head {
+.hUpper{
+    position: absolute;
+    width: 1920px;
+    height: 56px;
+    border-width: 1px;
+    background-color: #3c3c3c;
+}
+.HUContent{
+    position: absolute;
+    width: 1430px;
+    height: 30.9px;
+    top: 14px;
+    left: 195px;
+}
+.HUCotherOptions{
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    background: rgba(229, 238, 244, 0.49);
-    align-content: center;
-    padding: 0.5rem 10%;
+    width: 714px;
+    height: 19px;
+    top: 3px;
+    left: 0px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 15.45px;
+    line-height: 100%;
+    color: white;
 }
-
-.ui.header > .upper-head > .left-container {
+.HUaccessibility{
+    position: absolute;
+    width: 381.35px;
+    height: 30.9px;
+    top: 0px;
+    left: 1149px;    
+}
+.SizeChange{
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    column-gap: 2rem;
+    justify-content: space-between;
+    width: 70.81px;
+    color: #ffffff;
+    font-family: 'Lato';
 }
-
-.ui.header .language {
+.Theme{
+    position: absolute;
+    left: 119.74px;
     display: flex;
-    flex-direction: row;
+    width: 64.38px;
+    height: 30.9px;
+    justify-content: space-between;
+}
+.lightTheme{
+    position: absolute;
+    text-align: center;
+    width: 30.9px;
+    height: 24.9px;
+    top: -3px;
+    padding-top: 5px;
+    /* left: 1463.74px; */
+    border-width: 1.29px;
+    border-radius: 2.58px;    
+    border: 1.29px solid #CFDBE6;
+    background-color: #FFFFFF;
+}
+.darkTheme{
+    position: absolute;
+    left: 34px;
+    text-align: center;
+    width: 30.9px;
+    height: 24.9px;
+    top: -3px;
+    padding-top: 5px;
+    border-width: 1.29px;
+    border-radius: 2.58px;    
+    border: 1.29px solid #CFDBE6;
+    background-color: #febe10;
+}
+.language{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 83.24px;
+    left: 219px;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 15.45px;
+    top: 3px;
+}
+.search{
+    position: absolute;
+    left: 350.35px;
+    width: 31px;
+    height: 30.9px;
 }
 
-.ui.header .page-options a {
-    text-decoration: none;
-    color: var(--black);
+.hLower{
+    position: absolute;
+    background-color: #222222;
+    width: 1920px;
+    height: 169px;
+    top: 56px;   
 }
+.himg{
+    position: absolute;
+    width: 489px;
+    height: 67px;
+    top: 15px;
+    left: 718px;
+}
+.yline{
+    position: absolute;
+    width: 1540px;
+    top: 95px;
+    left: 187px;
+    border-width: 1.29px;   
+    border: 1.29px solid #F8B300 
+}
+.downArrowH{
+    width: 12.91px;
+    height: 7.72px;
+    padding-top: 5px;
+}
+.institute{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 109.475px;
+    height: 22px;
+    top: 120.75px;
+    left: 187px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.admissions{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+    height: 22px;
+    top: 120.75px;
+    left: 346px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.academics{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 126.71px;
+    height: 22px;
+    top: 120.75px;
+    left: 528px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.departments{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 156.21px;
+    height: 22px;
+    top: 120.75px;
+    left: 704.57px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.research{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 113.62px;
+    height: 22px;
+    top: 120.75px;
+    left: 910.58px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.campuslyf{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 138.15px;
+    height: 22px;
+    top: 120.75px;
+    left: 1076.66px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.careers{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 98.13px;
+    height: 22px;
+    top: 120.75px;
+    left: 1267.21px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.placements{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 136.87px;
+    height: 22px;
+    top: 120.75px;
+    left: 1420.43px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.resources{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 122.35px;
+    height: 22px;
+    top: 120.75px;
+    left: 1609.69px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18.02px;
+    line-height: 100%;
+    color: #ffffff;   
+}
+.buildIMG{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 2px;
+    left: 0px;
+    z-index: -1;
+}
+.introTxt{
+    position: absolute;
+    width: 584px;
+    height: 312px;
+    top: 412px;
+    left: 185px;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+.stats{
+    left: 187px;
+    top: 1029px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
 
-.ui.header .logo {
-    position: relative;
-    width: 100%;
-    max-width: 25rem;
-    cursor: pointer;
+}
+.RR{
+    position: absolute;
+    width: 1550px;
+    height: 843px;
+    top: 1409px;
+    left: 185px;    
+}
+.RRtext{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 1550px;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;    
 }
