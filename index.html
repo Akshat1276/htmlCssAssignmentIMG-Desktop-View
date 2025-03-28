@@ -1,98 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <div class="hUpper">
-            <div class="HUContent">
-                <div class="HUCotherOptions">
-                    <div>Saharanpur Campus</div>
-                    <div>Noida Campus</div>
-                    <div>Webmail</div>
-                    <div>iConnnect</div>
-                    <div>Directory</div>
-                    <div>Contact Us</div>
-                </div>
-                <div class="HUaccessibility">
-                    <div class="SizeChange">
-                        <div>A-</div>
-                        <div>A</div>
-                        <div>A+</div>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IIT Roorkee</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="HeaderUpper">
+                <div class="HeaderUpperContent">
+                    <div class="HULeft">
+                        <a href="#">Saharanpur Campus</a>
+                        <a href="#">Noida Campus</a>
+                        <a href="#">Webmail</a>
+                        <a href="#">iConnect</a>
+                        <a href="#">Directory</a>
+                        <a href="#">Contact Us</a>
                     </div>
-                    <div class="Theme">
-                        <div class="lightTheme">A</div>
-                        <div class="darkTheme">A</div>
+
+                    <div class="HULmob">
+                        <a href="#">Saharanpur Campus</a>
+                        <img src="assets/arrowDown.svg" alt="">
                     </div>
-                    <div class="language">हिंदी | ENG</div>
-                    <div class="search"><img src="Resources/svg/search.svg"></div>
+                    
+                    <div class="HURight">
+                        <div class="HURfont">
+                            <span style="font-size: 0.9em;">A-</span>
+                            <span>A</span>
+                            <span style="font-size: 1.1em;">A+</span>
+                        </div>
+                   
+                        <div>
+                            <button class="lightTheme">A</button>
+                            <button class="darkTheme">A</button>
+                        </div>
+                        <div><span>हिन्दी | ENG</span></div>
+                        <img src="assets/search.png" id="search-icon">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hLower">
-            <div class="himg"><img src="Resources/svg/headerLOGO.svg"></div>
-            <div class="yline"></div>
-            <div class="institute">
-                <div>INSTITUTE</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
+            <hr>
+
+            <div class="HeaderLower">
+                <div class="HeaderLowerContent">
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+    
+                    <div class="header-logo">
+                        <div><img src="assets/iitr-logo.png" alt="logo"></div>
+                        <div class="header-logo-text">
+                            <div class="header-text-hindi">भारतीय प्रौद्योगिकी संस्थान रूड़की</div>
+                            <div>Indian Institute of Technology Roorkee</div>
+                        </div>
+                    </div>
+    
+                    <img src="assets/search.png" alt="search" id="search-icon1">
+                </div>
             </div>
-            <div class="admissions">
-                <div>ADMISSIONS</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
+            
+
+            <hr class="short-hr">
+            <br>
+
+            <nav>
+                <div style="display: flex;justify-content: space-between;width: 90vw;">
+                    <a href="#">INSTITUTE</a>
+                    <a href="#">ACADEMICS</a>
+                    <a href="#">DEPARTMENTS</a>
+                    <a href="#">RESEARCH</a>
+                    <a href="#">CAMPUS LIFE</a>
+                    <a href="#">CAREERS</a>
+                    <a href="#">PLACEMENTS</a>
+                    <a href="#">RESOURCES</a>
+                </div>
+            </nav>
+
+            <div id="iitr-slogan">
+                श्रमं विना न किमपि साध्यम्
             </div>
-            <div class="academics">
-                <div>ACADEMICS</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
+            <br>
+        </header>
+
+        <main>
+                <img id="bg-image"alt="iit roorkee campus">
+                <p>RESEARCH<br>EDUCATE<br>INNOVATE<br>TOMORROW</p>
+        </main>
+
+        <section class="stats-cover">
+            <section class="stats">
+                <div class="students">
+                    <img src="assets/students.png" alt="students illustration">
+                    <div>
+                        <p>10300+</p>STUDENTS
+                    </div>
+                </div>
+    
+                <div class="faculty">
+                    <img src="assets/faculty.png" alt="faculty illustration">
+                    <div>
+                        <p>500+</p>FACULTY
+                    </div>
+                </div>
+    
+                <div class="staff">
+                    <img src="assets/staff.png" alt="staff illustration">
+                    <div>
+                        <p>600+</p>STAFF
+                    </div>
+                </div>
+    
+                <div class="patents">
+                    <img src="assets/patents.png" alt="patents illustration">
+                    <div>
+                        <p>450+</p>PATENTS
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="researches-cover">
+            <section class="researches">
+                <div class="researches-heading">
+                    <span class="recent-research">RECENT RESEARCH</span>
+                    <span>VIEW ALL</span>
+                </div>
+
+                <br>
+                <br>
+                
+                <div class="research-grid">
+                    <div class="block1"></div>
+                    <div class="block2"></div>
+                    <div class="block3"></div>
+                    <div class="block4"></div>
+                    <div class="block5"></div>
+                    <div class="block6"></div>
+                    <div class="block7"></div>
+                    <div class="block8"></div>
+                </div>
+            </section>
+        </section>
+
+        <section class="rankings">
+            <br>
+            <span id="rank-head">IIT ROORKEE RANKS AMONG<br>THE TOP UNIVERSITIES</span>
+
+            <br><br>
+
+            <div class="rankings-row">
+                <div class="rank-item">
+                    <img src="assets/archi.png" alt="archi">
+                    <br>
+                    NIRF RANK 1 IN ARCHITECTURE
+                    <br>
+                    <br>
+                    <span>#1</span>
+                </div>
+                <div class="rank-item">
+                    <img src="assets/engineering.png" alt="archi">
+                    <br>
+                    NIRF RANK 5 IN ENGINEERING
+                    <br>
+                    <br>
+                    <span>#5</span>
+                </div>
+                <div class="rank-item">
+                    <img src="assets/asia.png" alt="archi">
+                    <br>
+                    RANK 14 IN ASIA
+                    <br>
+                    <br>
+                    <span>#14</span>
+                </div>
+                <div class="rank-item">
+                    <img src="assets/world.png" alt="archi">
+                    <br>
+                    RANK #335 IN QS WORLD RANKINGS
+                    <br>
+                    <br>
+                    <span>#335</span>
+                </div>
             </div>
-            <div class="departments">
-                <div>DEPARTMENTS</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
+            <br><br><br>
+            <span id="rank-foot">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</span>
+            <br><br><br><br><br><br>
+        </section>
+
+        <section class="achievements-cover">
+            <section class="achievements">
+                <br>
+                <br>
+                <div class="achievements-heading">
+                    <span class="recent-achievement">RECENT ACHIEVMENTS</span>
+                    <span>VIEW ALL</span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div class="achievements-carousel">
+                    <img src="assets/chevron-left.png" alt="">
+                    <div class="achievement-item">
+                        <img src="assets/achievement1.png" alt="">
+                        <div>
+                            <span>IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge for Solar Innovation</span>
+                            <br>
+                            <br>
+                            IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's Start-Up Challenge award, aiming to drive green energy initiatives for a sustainable future. Know details here Perovskite Innovation Pvt Ltd, an Indian
+                        </div> 
+                    </div>
+                    <div class="achievement-item">
+                        <img src="assets/achievement2.png" alt="">
+                        <div>
+                            <span>IIT Roorkee-based startup develops gun-shot detection technology</span>
+                            <br>
+                            <br>
+                            A startup, Linearised Amplifier Technologies and Services (Linear-AmpTech), incubated at iHub DivyaSampark of Indian Institute of Technology (IIT) Roorkee has secured the top spot in the Dare to Dream 4.0 contest
+                        </div> 
+                    </div>
+                    <div class="achievement-item">
+                        <img src="assets/achievement3.png" alt="">
+                        <div>
+                            <span>IIT Roorkee leads study on Advanced Grid-Scale Energy Storage Technologies</span>
+                            <br>
+                            <br>
+                            This comprehensive study positions IIT Roorkee at the forefront of cutting-edge research, showcasing its dedication to providing India-centric solutions for a sustainable and resilient energy future
+                        </div> 
+                    </div>
+                   <img src="assets/chevron-right.png" alt="">
+                    
+                </div>
+
+                <br>
+                <br>
+                 
+                <div class="carousel-bubbles">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <br>
+                <br>
+
+            </section>
+        </section>
+
+        <section class="events-cover">
+            <section class="events">
+                <p>EVENTS GALLERY</p>
+                <br>
+                <div class="events-carousel">
+                    <span class="events-list">
+                        <span class="event">THOMSO</span>
+                        <span class="event">IITRMS</span>
+                        <span class="event">COGNIZANCE</span>
+                        <span class="event">TEDxIITRoorkee</span>
+                        <span class="event">EUNOIA</span>
+                        <span class="event">INTER-IIT</span>
+                    </span>
+                    <img src="assets/event.png" alt="" class="events-img">
+
+                    <p id="event-detail">
+                        Cognizance, the conjugation of the finest technical minds of the country is the annual technical fest of IIT Roorkee. It is a platform for your ideas to speak out loud and to promote the skills aiming to reach the pinnacle of your mind.
+                    </p>
+                <div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="milestones-cover">
+            <section class="milestones">
+                <br>
+                <br>
+                <div class="milestones-heading">
+                    <span class="milestones-text">MILESTONES</span>
+                    <span>VIEW ALL</span>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="milestones-bubbles">
+                    <div class="bubble-item">
+                        2018
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2019
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2020
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2021
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2022
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2023
+                        <span class="dot"></span>
+                    </div>
+                    <div class="bubble-item">
+                        2024
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="milestones-carousel">
+                    <img src="assets/chevron-left.png" alt="">
+                    <img src="assets/milestones.png" alt="">
+
+                    <div id="milestone-detail1">
+                        <span style="font-size: 1.2em;">
+                            IITR’s Architecture Department ranked <span style="font-weight: bold;font-size: 1.5em;">1st</span> among all colleges in India
+                        </span>
+                        <br>
+                        <br>
+                        <span style="color: grey;">
+                            Department of Architecture, IIT Roorkee remains unparalleled and has maintained its position as rank #1 in the National Institutional Ranking Framework (NIRF) Rankings for 2023. This is the third consecutive time IIT Roorkee has been ranked #1 in NIRF India ranking.
+                        </span>
+                        <br>
+                        <br>
+                        <button type="large">READ MORE</button>
+                    </div>
+
+                    <img src="assets/chevron-right.png" alt="">
+                </div>
+                <br>
+
+                <div id="milestone-detail2">
+                    <span style="font-size: 1.2em;">
+                        IITR’s Architecture Department ranked <span style="font-weight: bold;font-size: 1.5em;">1st</span> among all colleges in India
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color: grey;">
+                        Department of Architecture, IIT Roorkee remains unparalleled and has maintained its position as rank #1 in the National Institutional Ranking Framework (NIRF) Rankings for 2023. This is the third consecutive time IIT Roorkee has been ranked #1 in NIRF India ranking.
+                    </span>
+                    <br>
+                    <br>
+                    <button type="large">READ MORE</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="info-cover">
+
+            <section class="info">
+
+                <section class="noticeboard">
+                    <div class="noticeboard-heading">
+                        <span class="noticeboard-text">NOTICE BOARD</span>
+                        <span>VIEW ALL</span>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="board-list">
+                        <div class="board-item">
+                            <div class="board-item-row">
+                                <span>Administration</span>
+                                <span>Apr 23, 24</span>
+                            </div>
+                            <br>
+                            <div>
+                                Assistant Registrar General Administration<br>
+                                Revised rates of minimum wages for outsourced services -reg.
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="board-item">
+                            <div class="board-item-row">
+                                <span>Administration</span>
+                                <span>Apr 05, 24</span>
+                            </div>
+                            <br>
+                            <div>
+                                Assistant Registrar General Administration<br>
+                                Revised rates of minimum wages for outsourced services -reg.
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="board-item">
+                            <div class="board-item-row">
+                                <span>Administration</span>
+                                <span>Apr 04, 24</span>
+                            </div>
+                            <br>
+                            <div>
+                                Assistant Registrar General Administration<br>
+                                Revised rates of minimum wages for outsourced services -reg.
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="board-item">
+                            <div class="board-item-row">
+                                <span>Administration</span>
+                                <span>Oct 19, 22</span>
+                            </div>
+                            <br>
+                            <div>
+                                Assistant Registrar General Administration<br>
+                                Revised rates of minimum wages for outsourced services -reg.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="upcoming-events">
+                    <div class="upcoming-events-heading">
+                        <span class="upcoming-events-text">UPCOMING EVENTS</span>
+                        <span>VIEW ALL</span>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="upcoming-events-list">
+                        <div class="upcoming-events-item">
+                            <div class="ue-item-box">
+                                <div class="ue-large">19</div>
+                                <div>Oct</div>
+                            </div>
+                            <div>
+                                <div>IDEAS-2024</div>
+                                <br>
+                                <div>International Symposium Innovative Design for Excellence, Affordability and Sustainability</div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="upcoming-events-item">
+                            <div class="ue-item-box">
+                                <div class="ue-large">23</div>
+                                <div>Sept</div>
+                            </div>
+                            <div>
+                                <div>Inaugral Lecture</div>
+                                <br>
+                                <div>Prof. Shankar Lal Memorial Lecture Series</div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-row1">
+                    <div class="reach">
+                        <div class="footer-logo">
+                            <img src="assets/iitr-logo.png" alt="">
+                            <img src="assets/iitr-text.png" alt="">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            How to reach IIT Roorkee 
+                        </div>
+                        <div>
+                            +91-1332-285311
+                        </div>
+                        <div>
+                            registrar@iitr.ac.in
+                        </div>
+                        <div style="display: flex;gap: 10px;">
+                            <img src="assets/fb-white.png" alt="">
+                            <img src="assets/x-white.png" alt="">
+                            <img src="assets/linkedin-white.png" alt="">
+                            <img src="assets/insta-white.png" alt="">
+                            <img src="assets/yt-white.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <span>EXPLORE</span>
+                        <br>
+                        <br>
+                        <a href="#">Administration</a>
+                        <a href="#">Tenders and Quotations</a>
+                        <a href="#">Awards and Honours</a>
+                        <a href="#">RTI</a>
+                        <a href="#">Departments</a>
+                        <a href="#">Industry Consulation</a>
+                        <a href="#">International Students</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <span>RANKINGS</span>
+                        <br>
+                        <br>
+                        <a href="#">NIRF</a>
+                        <a href="#">ARIIA</a>
+                        <a href="#">QS</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <span>QUICK ACCESS</span>
+                        <br>
+                        <br>
+                        <a href="#">Donate</a>
+                        <a href="#">Support @ IITR</a>
+                        <a href="#">Intranet Portal</a>
+                        <a href="#">Give Feedback</a>
+                        <a href="#">Webmail</a>
+                        <a href="#">Internal Complaints Commitee</a>
+                        <a href="#">Book Guest House</a>
+                        <a href="#">IIT Council</a>
+                        <a href="#">MoE</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <span>QUICK LINKS</span>
+                        <br>
+                        <br>
+                        <a href="#">Safety</a>
+                        <a href="#">Security</a>
+                        <a href="#">Hindi Cell</a>
+                    </div>
+                </div>
+
+                <div class="footer-row2">
+                    <div id="footer-actions">
+                        <a href="#">Sitemap</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                    <div id="madeby">
+                        Made with &#x2764;&#xfe0f; by:Information Management Group, IITR
+                    </div>
+                </div>
+
+                <div class="footer-row3" >
+                    Copyright 2024, Institute Computer Centre, IIT Roorkee
+                </div>
             </div>
-            <div class="research">
-                <div>RESEARCH</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
-            </div>
-            <div class="campuslyf">
-                <div>CAMPUS LIFE</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
-            </div>
-            <div class="careers">
-                <div>CAREERS</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
-            </div>
-            <div class="placements">
-                <div>PLACEMENTS</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
-            </div>
-            <div class="resources">
-                <div>RESOURCES</div>
-                <img src="Resources/svg/downArrow.svg" class="downArrowH">
-            </div>
-        </div>
-    </div>
-    <div class="intro">
-        <div class="introTxt">RESEARCH EDUCATE INNOVATE TOMORROW</div>
-        <img src="Resources/svg/buildingPic.svg" class="buildIMG">
-        <div class="stats">
-            <div class="img1"><img src="Resources/svg/1.svg"></div>
-            <div class="img2"><img src="Resources/svg/2.svg"></div>
-            <div class="img3"><img src="Resources/svg/3.svg"></div>
-            <div class="img4"><img src="Resources/svg/4.svg"></div>
-        </div>
-    </div>
-    <div class="RR">
-        <div class="RRtext">
-            <div>RECENT RESEARCH</div>
-            <div>VIEW ALL</div>
-        </div>
-        
-    </div>
-</body>
+        </footer>
+
+    </body>
 </html>
