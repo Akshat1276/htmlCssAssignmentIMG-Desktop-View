@@ -112,6 +112,11 @@ nav {
     align-items: center;
     width: 100vw
 }
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
 
 nav ul {
     width: 90%;
@@ -127,7 +132,7 @@ header a {
 }
 
 nav a::after {
-    content: url("assets/chevron-down.svg");
+    content: url("assets/arrowDown.svg");
     margin-left: 5px;
     vertical-align: top;
 }
@@ -162,7 +167,7 @@ main img {
     width: 90vw;
     color: white;
     position: absolute;
-    top: 780px;
+    top: 880px;
     justify-content: center;
     align-items: stretch;
 }
@@ -170,7 +175,7 @@ main img {
 .stats div {
     padding: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .stats div div {
@@ -203,6 +208,7 @@ main img {
     width: 100vw;
     position: absolute;
     top: 1080px;
+    padding-top: 100px;
 }
 
 .researches {
@@ -682,6 +688,86 @@ footer a {
 
 
 
+@media(max-width: 1315px) and (min-width:1193px){
+    nav{
+        font-size: 13px;
+    }
+    .stats{
+        top: 670px;
+        scale: 0.8;
+        left: 7%;
+    }
+}
+@media(max-width: 1193px) and (min-width:1000px){
+    #bg-image{
+        top: 100px;
+        scale: 1.24;
+    }
+    header{
+        width: 112vw;
+    }
+    .HeaderUpper{
+        width: 112vw;
+    }
+    nav{
+        padding-left: 15px;
+    }
+    .stats{
+        top: 730px;
+        scale: 0.8;
+        left: 10%;
+    }
+}
+
+@media(max-width: 1000px) and (min-width: 857px){
+    header{
+        width: 106vw;
+    }
+    .HeaderUpper{
+        width: 106vw;
+    }
+    nav{
+        font-size: 13px;
+    }
+    .stats{
+        top: 620px;
+        scale: 0.8;
+        left: 8.3%;
+    }
+    main img {
+        width: 106%;
+        top: 78px;
+    }
+    main p{
+        top: 23%;
+    }
+}
+@media(max-width: 883px) and (min-width: 857px){
+    nav{
+        padding-left: 15px;
+    }
+    
+}
+@media(max-width: 857px){
+    nav{
+        font-size: 11.5px;
+    }
+    header, .HeaderUpper{
+        width: 117vw;
+    }
+    main img{
+        top: 120px;
+        scale: 1.34
+    }
+    main p{
+        top: 21%;
+    }
+    .stats{
+        top: 620px;
+        scale: 0.7;
+        left: 12%;
+    }
+}
 @media (max-width: 768px) {
     body {
         width: 100vw;
@@ -738,7 +824,15 @@ footer a {
 
     .stats {
         flex-wrap: wrap;
-        top: 130%;
+        top: 1250px;
+        scale: 1.15;
+    }
+    main p{
+        top: 30%;
+        scale: 1.3;
+    }
+    .stats :nth-child(3){
+        order:4;
     }
 
     .stats div {
@@ -746,11 +840,10 @@ footer a {
     }
 
     .stats .students,
-    .stats .patents {
+    .stats .staff{
         background-color: #F8B300;
     }
-
-    .stats .staff,
+    .stats .patents,
     .stats .faculty {
         background-color: #202020;
     }
@@ -933,5 +1026,27 @@ footer a {
     }
     .footer-row3{
         background-color: #292929;
+    }
+}
+
+@media(max-width: 360px){
+    .HULmob{
+        scale: 0.7;
+    }
+    .HURight{
+        scale: 0.7;
+    }
+    .HeaderUpper{
+        width: 112vw;;
+    }
+    header{
+        width: 112%;
+    }
+    footer{
+        width: 120vw;
+    }
+    .footer-row2,
+    .footer-row3{
+        left: 0px;
     }
 }
