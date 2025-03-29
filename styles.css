@@ -697,6 +697,9 @@ footer a {
         scale: 0.8;
         left: 7%;
     }
+    .researches-cover{
+        top:833px;
+    }
 }
 @media(max-width: 1193px) and (min-width:1000px){
     #bg-image{
@@ -716,6 +719,10 @@ footer a {
         top: 730px;
         scale: 0.8;
         left: 10%;
+    }
+    .researches-cover{
+        top: 885px;
+        width: 112vw;
     }
 }
 
@@ -741,10 +748,18 @@ footer a {
     main p{
         top: 23%;
     }
+    .researches-cover{
+        top: 780px;
+        width: 105vw;
+    }
 }
 @media(max-width: 883px) and (min-width: 857px){
     nav{
         padding-left: 15px;
+    }
+    .researches-cover{
+        /* top: 685px; */
+        width: 113vw;
     }
     
 }
@@ -766,6 +781,10 @@ footer a {
         top: 620px;
         scale: 0.7;
         left: 12%;
+    }
+    .researches-cover{
+        top: 735px;
+        width: 115vw;
     }
 }
 @media (max-width: 768px) {
@@ -851,7 +870,7 @@ footer a {
 
 
     .researches-cover{
-        top:190%;
+        top:151%;
     }
     .research-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -912,7 +931,8 @@ footer a {
 
 
     .rankings{
-        top:370%
+        top:310%;
+        width: 116vw;
     }
     .rankings-row{
         flex-direction: column;
@@ -934,7 +954,8 @@ footer a {
 
 
     .achievements-cover{
-        top: 540%;
+        top: 455%;
+        width: 116vw;
         background-color: #F8B300;
     }
     .achievement-item:nth-of-type(1),
@@ -944,7 +965,8 @@ footer a {
 
 
     .events-cover{
-        top: 620%;
+        top: 524.5%;
+        width: 116vw;
         background-color: #232323;
     }
     .events{
@@ -969,7 +991,8 @@ footer a {
 
 
     .milestones-cover{
-        top: 700%;
+        top: 594%;
+        width: 116vw;
     }
     .milestones-carousel{
         gap: 10px;
@@ -984,7 +1007,8 @@ footer a {
 
 
     .info-cover{
-        top: 810%
+        top: 686%;
+        width: 116vw;
     }
     .info{
         flex-direction: column;
@@ -1003,7 +1027,8 @@ footer a {
 
 
     footer{
-        top: 930%;
+        top: 780%;
+        width: 116vw;
     }
     .footer-row1{
         flex-direction: column;
@@ -1027,6 +1052,10 @@ footer a {
     .footer-row3{
         background-color: #292929;
     }
+}
+
+@media(max-width:654px) and (min-width:360px){
+    
 }
 
 @media(max-width: 360px){
