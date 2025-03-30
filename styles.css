@@ -44,6 +44,9 @@ body {
     align-items: center;
     /* justify-content: space-between; */
 }
+.languageToggle{
+    width: 30%;
+}
 .HURfont{
     display: flex;
     /* justify-content: space-between; */
@@ -207,7 +210,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 1080px;
+    top: 1100px;
     padding-top: 100px;
 }
 
@@ -290,7 +293,7 @@ main img {
 
 .rankings {
     position: absolute;
-    top: 1910px;
+    top: 1960px;
     display: flex;
     flex-direction: column;
     background-color: #F9F9F9;
@@ -406,15 +409,12 @@ main img {
     background-color: black;
 }
 
-
-
-
 .events-cover {
     display: flex;
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 3150px;
+    top: 3250px;
 }
 
 .events {
@@ -466,7 +466,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 3950px;
+    top: 4080px;
 }
 
 .milestones {
@@ -761,6 +761,33 @@ footer a {
         /* top: 685px; */
         width: 113vw;
     }
+    main p{
+        scale: 0.8;
+    }
+    .rankings{
+        top: 165%;
+        scale: 0.9;
+        width: 115vw;;
+        left: -1vw;
+    }
+    .achievements-cover{
+        width: 115vw;
+    }.events-cover{
+        width: 112vw;
+        top: 3176px;
+    }
+    .milestones-cover{
+        top: 3778px;
+        width: 113vw;
+    }
+    .info-cover{
+        width: 113vw;
+        top: 4355px;
+    }
+    footer{
+        top: 5115px;
+        width: 115vw;
+    }
     
 }
 @media(max-width: 857px){
@@ -784,6 +811,30 @@ footer a {
     }
     .researches-cover{
         top: 735px;
+        width: 115vw;
+    }
+    .rankings{
+        top: 165%;
+        scale: 0.85;
+        width: 115vw;;
+        left: 0.5vw;
+    }
+    .achievements-cover{
+        width: 115vw;
+    }.events-cover{
+        width: 112vw;
+        top: 3226px;
+    }
+    .milestones-cover{
+        top: 3778px;
+        width: 113vw;
+    }
+    .info-cover{
+        width: 113vw;
+        top: 4355px;
+    }
+    footer{
+        top: 5140px;
         width: 115vw;
     }
 }
@@ -1054,8 +1105,13 @@ footer a {
     }
 }
 
-@media(max-width:654px) and (min-width:360px){
-    
+@media(max-width:651px) and (min-width:360px){
+    .researches-cover{
+        top: 168%;
+    }
+    .rankings{
+        top: 315%;
+    }
 }
 
 @media(max-width: 360px){
@@ -1066,13 +1122,52 @@ footer a {
         scale: 0.7;
     }
     .HeaderUpper{
-        width: 112vw;;
+        width: 124.5vw;;
     }
     header{
-        width: 112%;
+        width: 124.5%;
+    }
+    .header-logo{
+        scale: 0.7;
+    }
+    main img{
+        top: 57vw;
+        width: 106.2vw;;
+    }
+    main p{
+        scale: 0.6;
+        left: -2vw;
+    }
+    .stats{
+        top: 845px;
+        width: 101vw;;
+    }
+    .researches-cover{
+        top: 135%;
+    }
+    .rankings{
+        top: 294%;
+        width: 121vw;
+    }
+    .achievements-cover{
+        top: 440%;
+        width: 124vw;
+    }
+    .events-cover{
+        top: 504%;
+        width: 124vw;
+    }
+    .milestones-cover{
+        top: 550%;
+        width: 124vw;
+    }
+    .info-cover{
+        top: 627%;
+        width: 124vw;
     }
     footer{
-        width: 120vw;
+        top: 740%;
+        width: 124vw;
     }
     .footer-row2,
     .footer-row3{
