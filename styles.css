@@ -4,12 +4,13 @@ header {
     color: white;
 }
 body {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     font-family: 'Lato';
+    resize: horizontal;
 }
 
 .HeaderUpper{
@@ -290,6 +291,14 @@ main img {
     background-image: url("assets/block8.png");
 }
 
+.researches-cover {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    top: 1100px;
+    padding-top: 100px;
+}
 
 .rankings {
     position: absolute;
@@ -299,6 +308,7 @@ main img {
     background-color: #F9F9F9;
     width: 100vw;
     align-items: center;
+    gap: 0px;
 }
 
 .rankings span {
@@ -309,6 +319,7 @@ main img {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
+    gap: 0px;
 }
 
 .rank-item {
@@ -701,6 +712,11 @@ footer a {
         top:833px;
     }
 }
+@media(max-width: 2000px) and (min-width:1330px){
+    .rankings-row{
+        gap: 80px;
+    }
+}
 @media(max-width: 1193px) and (min-width:1000px){
     #bg-image{
         top: 100px;
@@ -746,7 +762,7 @@ footer a {
         top: 78px;
     }
     main p{
-        top: 23%;
+        top: 230px;
     }
     .researches-cover{
         top: 780px;
@@ -765,7 +781,7 @@ footer a {
         scale: 0.8;
     }
     .rankings{
-        top: 165%;
+        top: 1795px;
         scale: 0.9;
         width: 115vw;;
         left: -1vw;
@@ -802,7 +818,7 @@ footer a {
         scale: 1.34
     }
     main p{
-        top: 21%;
+        top: 217px;
     }
     .stats{
         top: 620px;
@@ -814,7 +830,7 @@ footer a {
         width: 115vw;
     }
     .rankings{
-        top: 165%;
+        top: 1744px;
         scale: 0.85;
         width: 115vw;;
         left: 0.5vw;
@@ -898,7 +914,7 @@ footer a {
         scale: 1.15;
     }
     main p{
-        top: 30%;
+        top: 320px;
         scale: 1.3;
     }
     .stats :nth-child(3){
@@ -921,7 +937,7 @@ footer a {
 
 
     .researches-cover{
-        top:151%;
+        top: 1670px;
     }
     .research-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -982,7 +998,7 @@ footer a {
 
 
     .rankings{
-        top:310%;
+        top: 3300px;
         width: 116vw;
     }
     .rankings-row{
@@ -1005,7 +1021,7 @@ footer a {
 
 
     .achievements-cover{
-        top: 455%;
+        top: 4914px;
         width: 116vw;
         background-color: #F8B300;
     }
@@ -1016,7 +1032,7 @@ footer a {
 
 
     .events-cover{
-        top: 524.5%;
+        top: 5664.6px;
         width: 116vw;
         background-color: #232323;
     }
@@ -1042,7 +1058,7 @@ footer a {
 
 
     .milestones-cover{
-        top: 594%;
+        top: 6415.2px;
         width: 116vw;
     }
     .milestones-carousel{
@@ -1058,7 +1074,7 @@ footer a {
 
 
     .info-cover{
-        top: 686%;
+        top: 7408.8px;
         width: 116vw;
     }
     .info{
@@ -1078,7 +1094,7 @@ footer a {
 
 
     footer{
-        top: 780%;
+        top: 8424px;
         width: 116vw;
     }
     .footer-row1{
@@ -1107,10 +1123,17 @@ footer a {
 
 @media(max-width:651px) and (min-width:360px){
     .researches-cover{
-        top: 168%;
+        top: 1810px;
     }
     .rankings{
-        top: 315%;
+        top: 3402px;
+    }
+}
+
+@media(max-width: 500px){
+    main p{
+        scale: 0.6;
+        left: -2vw;
     }
 }
 
@@ -1143,30 +1166,30 @@ footer a {
         width: 101vw;;
     }
     .researches-cover{
-        top: 135%;
+        top: 1458px;
     }
     .rankings{
-        top: 294%;
+        top: 3175.2px;
         width: 121vw;
     }
     .achievements-cover{
-        top: 440%;
+        top: 4752px;
         width: 124vw;
     }
     .events-cover{
-        top: 504%;
+        top: 5443.2px;
         width: 124vw;
     }
     .milestones-cover{
-        top: 550%;
+        top: 5940px;
         width: 124vw;
     }
     .info-cover{
-        top: 627%;
+        top: 6771.6px;
         width: 124vw;
     }
     footer{
-        top: 740%;
+        top: 7992px;
         width: 124vw;
     }
     .footer-row2,
