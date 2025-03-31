@@ -46,7 +46,7 @@ body {
     /* justify-content: space-between; */
 }
 .languageToggle{
-    width: 30%;
+    width: 77px;
 }
 .HURfont{
     display: flex;
@@ -154,11 +154,27 @@ main p {
     content: url("assets/background.png");
 }
 
-main img {
+#bg-image{
     width: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    /* width: 112vw; */
+    align-items: flex-end;    
+    top: 190px;
+    position: relative;
+}
+.facebook,
+.X,
+.LinkedIn,
+.insta,
+.youtube{
+    height: 50px;
+    width: 50px;
 }
 
 .stats-cover {
@@ -235,74 +251,146 @@ main img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
+    height: 900px;
+    z-index: 5000;
 }
 
 .research-grid div {
-    background-color: #99BBD1;
+    /* background-color: #99BBD1; */
+    
 }
 
 .block1 {
+    z-index: 20;
     grid-column: span 3;
     grid-row: span 1;
     background-image: url("assets/block1.jpeg");
-    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .block2 {
     grid-column: span 3;
     grid-row: span 2;
     background-image: url("assets/block2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .block3 {
     grid-column: span 3;
     grid-row: span 2;
-    background-image: url("assets/block3.png")
+    background-image: url("assets/block3.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 .block4 {
     grid-column: span 3;
     grid-row: span 3;
-    background-image: url("assets/block4.png")
+    background-image: url("assets/block4.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
 }
 
 .block5 {
     grid-column: span 3;
     grid-row: span 3;
-    background-image: url("assets/block5.jpeg");
-    height: 430px;
+    background-image: url("assets/block5.svg");
+    /* background-repeat: no-repeat;*/
+    background-size: cover;
 }
 
 .block6 {
     grid-column: span 4;
     grid-row: span 2;
-    background-image: url("assets/block6.jpeg")
+    background-image: url("assets/block6.jpeg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 .block7 {
     grid-column: span 2;
     grid-row: span 2;
     background-image: url("assets/block7.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 .block8 {
     grid-column: span 3;
     grid-row: span 1;
     background-image: url("assets/block8.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
-.researches-cover {
+.patents-cover {
     display: flex;
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 1100px;
+    top: 2150px;
+    /* z-index: 100; */
     padding-top: 100px;
 }
-
+.patentsContent {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+.patents-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.recentlyGrantedPatents {
+    font-size: 1.8em;
+}
+.patents-carousel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px; /*20*/
+    padding-left: 75px;
+    padding-right: 75px;
+    z-index: 10000;
+}
+.patents-carousel img{
+    min-width: 0;
+    /* scale: 1.2; */
+    /* width: 200px; */
+}
+.chevron-patents{
+    width: 80px;
+}
+.GrantedPatentsImg{
+    width: 1300px;
+}
+.RMbtn{
+    margin-right: 10px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.AFLbtn{
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+#patent-detail2{
+    display: none;
+}
 .rankings {
     position: absolute;
-    top: 1960px;
+    top: 2710px;
     display: flex;
     flex-direction: column;
     background-color: #F9F9F9;
@@ -362,7 +450,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 2450px;
+    top: 3225px;
     background-color: #99BBD1;
 }
 .achievements {
@@ -425,7 +513,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 3250px;
+    top: 4050px;
 }
 
 .events {
@@ -477,7 +565,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 4080px;
+    top: 4880px;
 }
 
 .milestones {
@@ -516,6 +604,7 @@ main img {
 }
 .milestones-carousel img{
     min-width: 0;
+    /* width: 800px; */
 }
 #milestone-detail2{
     display: none;
@@ -530,7 +619,7 @@ main img {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 4750px;
+    top: 5550px;
 }
 
 .info {
@@ -620,7 +709,7 @@ main img {
 
 footer {
     position: absolute;
-    top: 5450px;
+    top: 6250px;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -711,6 +800,9 @@ footer a {
     .researches-cover{
         top:833px;
     }
+    .patents-cover{
+        top: 2000px;
+    }
 }
 @media(max-width: 2000px) and (min-width:1330px){
     .rankings-row{
@@ -721,6 +813,9 @@ footer a {
     #bg-image{
         top: 100px;
         scale: 1.24;
+    }
+    .socials{
+        width: 112vw;
     }
     header{
         width: 112vw;
@@ -740,6 +835,10 @@ footer a {
         top: 885px;
         width: 112vw;
     }
+    .patents-cover{
+        top: 2000px;
+        width: 108vw;
+    }
 }
 
 @media(max-width: 1000px) and (min-width: 857px){
@@ -757,9 +856,12 @@ footer a {
         scale: 0.8;
         left: 8.3%;
     }
-    main img {
+    #bg-image {
         width: 106%;
         top: 78px;
+    }
+    .socials{
+        width: 105vw;
     }
     main p{
         top: 230px;
@@ -767,6 +869,9 @@ footer a {
     .researches-cover{
         top: 780px;
         width: 105vw;
+    }
+    .patents-cover{
+        top: 1955px;
     }
 }
 @media(max-width: 883px) and (min-width: 857px){
@@ -781,27 +886,28 @@ footer a {
         scale: 0.8;
     }
     .rankings{
-        top: 1795px;
+        top: 2695px;
         scale: 0.9;
         width: 115vw;;
         left: -1vw;
     }
     .achievements-cover{
         width: 115vw;
+        
     }.events-cover{
         width: 112vw;
-        top: 3176px;
+        top: 3976px;
     }
     .milestones-cover{
-        top: 3778px;
+        top: 4478px;
         width: 113vw;
     }
     .info-cover{
         width: 113vw;
-        top: 4355px;
+        top: 5055px;
     }
     footer{
-        top: 5115px;
+        top: 5915px;
         width: 115vw;
     }
     
@@ -813,9 +919,12 @@ footer a {
     header, .HeaderUpper{
         width: 117vw;
     }
-    main img{
+    #bg-image{
         top: 120px;
         scale: 1.34
+    }
+    .socials{
+        width: 115vw;
     }
     main p{
         top: 217px;
@@ -829,28 +938,35 @@ footer a {
         top: 735px;
         width: 115vw;
     }
+    .patents-cover{
+        top: 1800px;
+    }
+    .patent-detail1{
+        width: 108vw;
+    }
     .rankings{
-        top: 1744px;
+        top: 2544px;
         scale: 0.85;
         width: 115vw;;
         left: 0.5vw;
     }
     .achievements-cover{
         width: 115vw;
+        top: 3100px;
     }.events-cover{
         width: 112vw;
-        top: 3226px;
+        top: 3926px;
     }
     .milestones-cover{
-        top: 3778px;
+        top: 4478px;
         width: 113vw;
     }
     .info-cover{
         width: 113vw;
-        top: 4355px;
+        top: 5005px;
     }
     footer{
-        top: 5140px;
+        top: 5740px;
         width: 115vw;
     }
 }
@@ -985,7 +1101,7 @@ footer a {
     .block7 {
         grid-column: span 1;
         grid-row: span 5;
-        background-image: url("assets/block5.jpeg");
+        background-image: url("assets/block5.svg");
     }
     
     .block8 {
@@ -994,11 +1110,30 @@ footer a {
         height: 200px;
         background-image: url("assets/block8.png");
     }
-
-
+    .patents-cover{
+        top: 3200px;
+        /* width: 116vw; */
+    }
+    .GrantedPatentsImg{
+        height: 400px;;
+        width: 500px
+    }
+    .chevron-patents{
+        width: 10px;
+    }
+    #patent-detail1{
+        display: none;
+    }
+    #patent-detail2{
+        display: block;
+    }
+    .patentsBtn{
+        display: flex;
+        justify-content: space-between;
+    }
 
     .rankings{
-        top: 3300px;
+        top: 3900px;
         width: 116vw;
     }
     .rankings-row{
@@ -1021,7 +1156,7 @@ footer a {
 
 
     .achievements-cover{
-        top: 4914px;
+        top: 5434px;
         width: 116vw;
         background-color: #F8B300;
     }
@@ -1032,7 +1167,7 @@ footer a {
 
 
     .events-cover{
-        top: 5664.6px;
+        top: 6164.6px;
         width: 116vw;
         background-color: #232323;
     }
@@ -1058,7 +1193,7 @@ footer a {
 
 
     .milestones-cover{
-        top: 6415.2px;
+        top: 6915.2px;
         width: 116vw;
     }
     .milestones-carousel{
@@ -1074,7 +1209,7 @@ footer a {
 
 
     .info-cover{
-        top: 7408.8px;
+        top: 7908.8px;
         width: 116vw;
     }
     .info{
@@ -1094,7 +1229,7 @@ footer a {
 
 
     footer{
-        top: 8424px;
+        top: 9024px;
         width: 116vw;
     }
     .footer-row1{
@@ -1126,7 +1261,10 @@ footer a {
         top: 1810px;
     }
     .rankings{
-        top: 3402px;
+        top: 3952px;
+    }
+    .patents-cover{
+        top: 3250px;
     }
 }
 
@@ -1134,6 +1272,9 @@ footer a {
     main p{
         scale: 0.6;
         left: -2vw;
+    }
+    .rankings{
+        top: 4002px;
     }
 }
 
@@ -1153,9 +1294,12 @@ footer a {
     .header-logo{
         scale: 0.7;
     }
-    main img{
+    #bg-image{
         top: 57vw;
         width: 106.2vw;;
+    }
+    .socials{
+        width: 124vw;
     }
     main p{
         scale: 0.6;
@@ -1168,32 +1312,47 @@ footer a {
     .researches-cover{
         top: 1458px;
     }
+    .patents-cover{
+        top: 3000px;
+    }
     .rankings{
-        top: 3175.2px;
+        top: 3955.2px;
         width: 121vw;
     }
     .achievements-cover{
-        top: 4752px;
+        top: 5452px;
         width: 124vw;
     }
     .events-cover{
-        top: 5443.2px;
+        top: 6243.2px;
         width: 124vw;
     }
     .milestones-cover{
-        top: 5940px;
+        top: 6740px;
         width: 124vw;
     }
     .info-cover{
-        top: 6771.6px;
+        top: 7571.6px;
         width: 124vw;
     }
     footer{
-        top: 7992px;
+        top: 8792px;
         width: 124vw;
     }
     .footer-row2,
     .footer-row3{
         left: 0px;
+    }
+    .block1,
+    .block2,
+    .block3,
+    .block4,
+    .block5,
+    .block6,
+    .block7,
+    .block8{
+        /* height: 150px; */
+        /* scale: 0.6; */
+        width: 150px;
     }
 }
