@@ -4,8 +4,7 @@ header {
     color: white;
 }
 body {
-    /* width: 100%; */
-    /* height: 100%; */
+    width: auto;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -225,10 +224,11 @@ main p {
 .researches-cover {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: auto;
     position: absolute;
     top: 1100px;
     padding-top: 100px;
+    left: 5vw;
 }
 
 .researches {
@@ -833,7 +833,8 @@ footer a {
     }
     .researches-cover{
         top: 885px;
-        width: 112vw;
+        width: auto;
+        left: 5vw;
     }
     .patents-cover{
         top: 2000px;
