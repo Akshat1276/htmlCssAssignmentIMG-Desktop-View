@@ -15,7 +15,7 @@ body {
 .HeaderUpper{
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #3C3C3C;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -113,7 +113,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw
+    width: 100%;
 }
 .nav-links{
     display: flex;
@@ -329,7 +329,7 @@ main p {
 .patents-cover {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 2150px;
     /* z-index: 100; */
@@ -367,7 +367,7 @@ main p {
     width: 80px;
 }
 .GrantedPatentsImg{
-    width: 1300px;
+    width: 130px;
 }
 .RMbtn{
     margin-right: 10px;
@@ -393,7 +393,7 @@ main p {
     top: 2710px;
     display: flex;
     flex-direction: column;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     width: 100vw;
     align-items: center;
     gap: 0px;
@@ -414,8 +414,8 @@ main p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
+    padding-right: 1.43%;
+    padding-left: 1.5%;
     border-right: 1px solid #C4C4C4;
     white-space: nowrap;
 }
@@ -481,12 +481,15 @@ main p {
     min-width: 0;
     align-self: stretch;
     border-radius: 10px;
+    z-index: 5;
 }
 .achievement-item span {
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .achievement-item div {
+    font-size: 1.1em;
+    line-height: 30px;
     padding: 15px;
 }
 
@@ -513,7 +516,7 @@ main p {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    top: 4050px;
+    top: 4080px;
 }
 
 .events {
@@ -549,14 +552,20 @@ main p {
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1.2em;
 }
-.event:nth-of-type(3) {
+.event:hover{
     background-color: #F9B202;
     border-radius: 10px;
 }
+/* .event:nth-of-type(3) {
+    background-color: #F9B202;
+    border-radius: 10px;
+} */
 #event-detail{
     display: none;
+    /* font-size: 1.7em; */
 }
 
 
@@ -671,6 +680,7 @@ main p {
 .board-item {
     display: flex;
     flex-direction: column;
+    line-height: 22px;
 }
 
 .board-item-row {
@@ -714,7 +724,7 @@ footer {
     justify-content: center;
     background-color: black;
     color: #F7F7F7;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer {
@@ -806,30 +816,30 @@ footer a {
 }
 @media(max-width: 2000px) and (min-width:1330px){
     .rankings-row{
-        gap: 80px;
+        gap: 50px;
     }
 }
 @media(max-width: 1193px) and (min-width:1000px){
     #bg-image{
         top: 100px;
-        scale: 1.24;
+        scale: 1;
     }
     .socials{
-        width: 112vw;
+        width: 100%;
     }
     header{
-        width: 112vw;
+        width: 100%;
     }
     .HeaderUpper{
-        width: 112vw;
+        width: 100%;
     }
     nav{
-        padding-left: 15px;
+        /* padding-left: 15px; */
     }
     .stats{
         top: 730px;
         scale: 0.8;
-        left: 10%;
+        left: 5.5%;
     }
     .researches-cover{
         top: 885px;
@@ -838,50 +848,60 @@ footer a {
     }
     .patents-cover{
         top: 2000px;
-        width: 108vw;
+        width: 100%;
     }
+    /* .rankings-row */
 }
 
 @media(max-width: 1000px) and (min-width: 857px){
     header{
-        width: 106vw;
+        width: 100%;
     }
     .HeaderUpper{
-        width: 106vw;
+        width: 100%;
     }
     nav{
         font-size: 13px;
     }
     .stats{
-        top: 620px;
-        scale: 0.8;
-        left: 8.3%;
+        top: 580px;
+        scale: 0.7;
+        left: 5.3%;
     }
     #bg-image {
-        width: 106%;
+        width: 100%;
         top: 78px;
     }
     .socials{
-        width: 105vw;
+        width: 100%;
+        top: 106px;
     }
     main p{
         top: 230px;
     }
     .researches-cover{
         top: 780px;
-        width: 105vw;
+        width: 90%;
     }
     .patents-cover{
         top: 1955px;
+        width: 90%;
+        left: 2%;
+    }
+    .rankings-row{
+        scale: 0.8;
+    }
+    .rank-item{
+        scale: 0.9;
     }
 }
 @media(max-width: 883px) and (min-width: 857px){
     nav{
-        padding-left: 15px;
+        padding-left: 0px;
     }
     .researches-cover{
         /* top: 685px; */
-        width: 113vw;
+        width: 90%;
     }
     main p{
         scale: 0.8;
@@ -889,27 +909,27 @@ footer a {
     .rankings{
         top: 2695px;
         scale: 0.9;
-        width: 115vw;;
+        width: 100%;;
         left: -1vw;
     }
     .achievements-cover{
-        width: 115vw;
+        width: 100%;
         
     }.events-cover{
-        width: 112vw;
+        width: 100%;
         top: 3976px;
     }
     .milestones-cover{
         top: 4478px;
-        width: 113vw;
+        width: 100%;
     }
     .info-cover{
-        width: 113vw;
+        width: 100%;
         top: 5055px;
     }
     footer{
         top: 5915px;
-        width: 115vw;
+        width: 100%;
     }
     
 }
@@ -917,15 +937,22 @@ footer a {
     nav{
         font-size: 11.5px;
     }
-    header, .HeaderUpper{
-        width: 117vw;
+    .HeaderUpperContent{
+        gap:0.1px;
+    }
+    header{
+        width: 100%;
+    }
+    .HeaderUpper{
+        width: 100%;
     }
     #bg-image{
         top: 120px;
-        scale: 1.34
+        scale: 1;
     }
     .socials{
-        width: 115vw;
+        width: 100%;
+        top: 110px;
     }
     main p{
         top: 217px;
@@ -933,48 +960,55 @@ footer a {
     .stats{
         top: 620px;
         scale: 0.7;
-        left: 12%;
+        left: 5%;
     }
     .researches-cover{
         top: 735px;
-        width: 115vw;
+        width: 90%;
     }
     .patents-cover{
         top: 1800px;
     }
     .patent-detail1{
-        width: 108vw;
+        width: 100%;
     }
     .rankings{
         top: 2544px;
-        scale: 0.85;
-        width: 115vw;;
+        scale: 0.75;
+        width: 100%;;
         left: 0.5vw;
     }
+    .rankings-row{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .rank-item{
+        scale: 0.8;
+    }
     .achievements-cover{
-        width: 115vw;
+        width: 100%;
         top: 3100px;
     }.events-cover{
-        width: 112vw;
+        width: 100%;
         top: 3926px;
     }
     .milestones-cover{
         top: 4478px;
-        width: 113vw;
+        width: 100%;
     }
     .info-cover{
-        width: 113vw;
+        width: 100%;
         top: 5005px;
     }
     footer{
         top: 5740px;
-        width: 115vw;
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
     body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
     }
 
     .HULmob{
@@ -1028,7 +1062,7 @@ footer a {
     .stats {
         flex-wrap: wrap;
         top: 1250px;
-        scale: 1.15;
+        scale: 1;
     }
     main p{
         top: 320px;
@@ -1113,7 +1147,7 @@ footer a {
     }
     .patents-cover{
         top: 3200px;
-        /* width: 116vw; */
+        width: 98%;
     }
     .GrantedPatentsImg{
         height: 400px;;
@@ -1135,7 +1169,7 @@ footer a {
 
     .rankings{
         top: 3900px;
-        width: 116vw;
+        width: 100%;
     }
     .rankings-row{
         flex-direction: column;
@@ -1145,6 +1179,7 @@ footer a {
         border-bottom: 1px solid #C4C4C4;
         padding-top: 4%;
         padding-bottom: 4%;
+        scale:1;
     }
     #rank-foot{
         display: none;
@@ -1158,22 +1193,28 @@ footer a {
 
     .achievements-cover{
         top: 5434px;
-        width: 116vw;
+        width: 100%;
         background-color: #F8B300;
     }
     .achievement-item:nth-of-type(1),
     .achievement-item:nth-of-type(3){
         display: none;
     }
+    .achievement-item div{
+        font-size: 1.8em;
+    }
 
 
     .events-cover{
-        top: 6164.6px;
-        width: 116vw;
+        top: 6364.6px;
+        width: 100%;
         background-color: #232323;
     }
     .events{
         border-radius: 0;
+    }
+    .event{
+        padding-bottom: 0px;
     }
     .events-carousel{
         flex-direction: column;
@@ -1182,10 +1223,10 @@ footer a {
         order: 2;
         flex-direction: row;
         overflow-x: scroll;
-        overflow-y: hidden;
+        overflow-y: scroll;
     }
     #event-detail{
-        font-size: 1em;
+        font-size: 1.6em;
         order: 3;
         opacity: 0.8;
         display: block;
@@ -1194,8 +1235,8 @@ footer a {
 
 
     .milestones-cover{
-        top: 6915.2px;
-        width: 116vw;
+        top: 7215.2px;
+        width: 100%;
     }
     .milestones-carousel{
         gap: 10px;
@@ -1205,13 +1246,15 @@ footer a {
     }
     #milestone-detail2{
         display: block;
+        width: 84%;
+        padding-left: 59px;
     }
 
 
 
     .info-cover{
-        top: 7908.8px;
-        width: 116vw;
+        top: 8308.8px;
+        width: 100%;
     }
     .info{
         flex-direction: column;
@@ -1222,6 +1265,9 @@ footer a {
     .board-list{
         background-color: #FACB5559;
     }
+    .board-item div{
+        font-size: 1.2em;
+    }
     .upcoming-events-heading{
         margin-top: 5%;
         width: 100%;
@@ -1230,8 +1276,8 @@ footer a {
 
 
     footer{
-        top: 9024px;
-        width: 116vw;
+        top: 9344px;
+        width: 100%;
     }
     .footer-row1{
         flex-direction: column;
@@ -1246,7 +1292,7 @@ footer a {
         display: flex;
         justify-content: center;
         background-color: #1A1A1A;
-        padding: 10px;
+        padding: 0px;
         width: 100vw;
     }
     #footer-actions{
