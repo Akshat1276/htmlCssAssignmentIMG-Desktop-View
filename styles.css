@@ -149,11 +149,11 @@ main p {
     left: 15%;
 }
 
-#bg-image {
-    content: url("assets/background.png");
+#bg-image, #bg-image2 {
+    /* content: url("assets/background.png"); */
 }
 
-#bg-image{
+#bg-image, #bg-image2{
     width: 100%;
     position: absolute;
     top: 0;
@@ -179,6 +179,7 @@ main p {
 .stats-cover {
     display: flex;
     justify-content: center;
+    /* top: 0px; */
 }
 
 .stats {
@@ -353,7 +354,7 @@ main p {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    gap: 45px; /*20*/
+    gap: 60px; /*20*/
     padding-left: 75px;
     padding-right: 75px;
     z-index: 10000;
@@ -364,10 +365,22 @@ main p {
     /* width: 200px; */
 }
 .chevron-patents{
-    width: 80px;
+    width: 40px;
+    scale: 2;
+}
+.GrantedPatentsImgShadow{
+    /* display: none; */
+    width: 410px;
+    height: 200px;
+    color: white;
 }
 .GrantedPatentsImg{
-    width: 130px;
+    top: 230px;
+    left: 299px;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    scale: 1.7;
 }
 .RMbtn{
     margin-right: 10px;
@@ -520,7 +533,7 @@ main p {
 }
 
 .events {
-    width: 90vw;
+    width: 77vw;
     display: flex;
     flex-direction: column;
     color: white;
@@ -541,12 +554,14 @@ main p {
 .events-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 26px;
     align-self: stretch;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .events-img {
     min-width: 0;
+    padding-bottom: 26px;
+    padding-left: 227px;
 }
 .event {
     padding-right: 10px;
@@ -601,15 +616,29 @@ main p {
     align-items: center;
     gap: 10px;
 }
-.bubble-item:nth-of-type(6) {
+.bubble-item:hover{
     color: #F9B202;
 }
+/* .bubble-item:nth-of-type(6) {
+    color: #F9B202;
+} */
 .milestones-carousel {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+.milestones-img{
+    padding-left: 150px;
+    width: 400px;
+    height: 400px;
+    scale: 1.8;
+}
+.spacebtwn{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .milestones-carousel img{
     min-width: 0;
@@ -796,11 +825,34 @@ footer a {
     width: 100vw;
 }
 
+@media(max-width: 1539){
+    .achievements-cover{
+        top: 3500px;
+    }
+}
+
 
 
 @media(max-width: 1315px) and (min-width:1193px){
     nav{
         font-size: 13px;
+    }
+    .rankings{
+        top: 2850px;
+    }
+    .chevron-patents {
+        width: 20px;
+        scale: 10;
+    }
+    .GrantedPatentsImg{
+        left: 270px;
+        top: 315px;
+    }
+    .achievements-cover{
+        top: 3340px;
+    }
+    .events-cover{
+        top: 4180px;
     }
     .stats{
         top: 670px;
@@ -820,9 +872,25 @@ footer a {
     }
 }
 @media(max-width: 1193px) and (min-width:1000px){
-    #bg-image{
+    #bg-image, #bg-image2{
         top: 100px;
         scale: 1;
+    }
+    .GrantedPatentsImg{
+        scale: 1.6;
+        left: 250px;
+        top: 315px;
+    }
+    .chevron-patents {
+        width: 20px;
+        scale: 12;
+    }
+    .patents-carousel{
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .rankings{
+        top: 2900px;
     }
     .socials{
         width: 100%;
@@ -840,6 +908,21 @@ footer a {
         top: 730px;
         scale: 0.8;
         left: 5.5%;
+    }
+    .achievements-cover{
+        top: 3500px
+    }
+    .events-cover{
+        top: 4430px
+    }
+    .milestones-cover{
+        top: 5100px;
+    }
+    .info-cover{
+        top: 5800px
+    }
+    footer{
+        top: 6600px;
     }
     .researches-cover{
         top: 885px;
@@ -868,10 +951,11 @@ footer a {
         scale: 0.7;
         left: 5.3%;
     }
-    #bg-image {
+    #bg-image, #bg-image2 {
         width: 100%;
         top: 78px;
     }
+
     .socials{
         width: 100%;
         top: 106px;
@@ -887,6 +971,34 @@ footer a {
         top: 1955px;
         width: 90%;
         left: 2%;
+    }
+    .GrantedPatentsImgShadow{
+        display: none;        
+    }
+    .GrantedPatentsImg{
+        left: 320px;
+    }
+    #patent-detail1{
+        padding-top: 400px;
+        /* padding-left: 50px; */
+    }
+    .rankings{
+        top: 2950px
+    }
+    .achievements-cover{
+        top: 3450px;
+    }
+    .events-cover{
+        top: 4420px
+    }
+    .milestones-cover{
+        top: 5100px;
+    }
+    .info-cover{
+        top: 5950px;
+    }
+    footer{
+        top: 6730px;
     }
     .rankings-row{
         scale: 0.8;
@@ -906,8 +1018,38 @@ footer a {
     main p{
         scale: 0.8;
     }
+    #patent-detail1{
+        /* position: absolute;
+        width: 60%;
+        top: 190px;
+        left: 46%; */
+    }
+    .GrantedPatentsImgShadow{
+        display: none;        
+    }
+    #patent-detail1{
+        padding-top: 300px;
+    }
+    .chevron-patents{
+        /* top: 15px; */
+        width: 10px;
+        padding-top: 15px;
+    }
+    .GrantedPatentsImgShadow{
+        display: wrap;
+        width: 42%;
+    }
+    .GrantedPatentsImg{
+        left: 280px;
+        top: 220px;
+        scale: 1.4;
+    }
+    .patents-carousel{
+        padding-right: 0px;
+        /* top: 15px; */
+    }
     .rankings{
-        top: 2695px;
+        top: 2885px;
         scale: 0.9;
         width: 100%;;
         left: -1vw;
@@ -917,23 +1059,23 @@ footer a {
         
     }.events-cover{
         width: 100%;
-        top: 3976px;
+        top: 4476px;
     }
     .milestones-cover{
-        top: 4478px;
+        top: 5028px;
         width: 100%;
     }
     .info-cover{
         width: 100%;
-        top: 5055px;
+        top: 5655px;
     }
     footer{
-        top: 5915px;
+        top: 6445px;
         width: 100%;
     }
     
 }
-@media(max-width: 857px){
+@media(max-width: 857px) and (min-width: 768px){
     nav{
         font-size: 11.5px;
     }
@@ -946,7 +1088,7 @@ footer a {
     .HeaderUpper{
         width: 100%;
     }
-    #bg-image{
+    #bg-image, #bg-image2{
         top: 120px;
         scale: 1;
     }
@@ -972,8 +1114,17 @@ footer a {
     .patent-detail1{
         width: 100%;
     }
+    .GrantedPatentsImgShadow{
+        display: none;        
+    }
+    .GrantedPatentsImg{
+        left: 267px;
+    }
+    #patent-detail1{
+        padding-top: 350px;
+    }
     .rankings{
-        top: 2544px;
+        top: 2774px;
         scale: 0.75;
         width: 100%;;
         left: 0.5vw;
@@ -987,21 +1138,21 @@ footer a {
     }
     .achievements-cover{
         width: 100%;
-        top: 3100px;
+        top: 3300px;
     }.events-cover{
         width: 100%;
-        top: 3926px;
+        top: 4326px;
     }
     .milestones-cover{
-        top: 4478px;
+        top: 4878px;
         width: 100%;
     }
     .info-cover{
         width: 100%;
-        top: 5005px;
+        top: 5505px;
     }
     footer{
-        top: 5740px;
+        top: 6340px;
         width: 100%;
     }
 }
@@ -1053,9 +1204,12 @@ footer a {
         justify-content: center;
     }
 
-
-    #bg-image {
+    #bg-image{
+        display: none;
+    }
+    #bg-image2{
         content: url("assets/background-mobile.png");
+        z-index: -4;
     }
 
 
@@ -1150,11 +1304,23 @@ footer a {
         width: 98%;
     }
     .GrantedPatentsImg{
-        height: 400px;;
-        width: 500px
+        position: relative;
+        height: 200px;
+        width: 270px;
+        top: 39px;
+        left: -84px;
+        scale: 1.35;
+    }
+    .GrantedPatentsImgShadow{
+        display: none;
+    }
+    #patent-detail2{
+        padding-top: 134px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .chevron-patents{
-        width: 10px;
+        width: 1px;
     }
     #patent-detail1{
         display: none;
@@ -1168,7 +1334,7 @@ footer a {
     }
 
     .rankings{
-        top: 3900px;
+        top: 4000px;
         width: 100%;
     }
     .rankings-row{
@@ -1192,7 +1358,7 @@ footer a {
 
 
     .achievements-cover{
-        top: 5434px;
+        top: 5534px;
         width: 100%;
         background-color: #F8B300;
     }
@@ -1206,12 +1372,16 @@ footer a {
 
 
     .events-cover{
-        top: 6364.6px;
+        top: 6464.6px;
         width: 100%;
         background-color: #232323;
     }
     .events{
         border-radius: 0;
+    }
+    .events-img{
+        padding-bottom: 0px;
+        padding-left: 0px;
     }
     .event{
         padding-bottom: 0px;
@@ -1233,9 +1403,15 @@ footer a {
     }
 
 
-
+    .milestones-img{
+        padding: 0 0 0 0;
+        scale: 1;
+    }
+    .spacebtwn{
+        display: none;
+    }
     .milestones-cover{
-        top: 7215.2px;
+        top: 7315.2px;
         width: 100%;
     }
     .milestones-carousel{
@@ -1253,7 +1429,7 @@ footer a {
 
 
     .info-cover{
-        top: 8308.8px;
+        top: 8408.8px;
         width: 100%;
     }
     .info{
@@ -1276,7 +1452,7 @@ footer a {
 
 
     footer{
-        top: 9344px;
+        top: 9444px;
         width: 100%;
     }
     .footer-row1{
@@ -1304,14 +1480,34 @@ footer a {
 }
 
 @media(max-width:651px) and (min-width:360px){
+    #bg-image2{
+        top: 190px;
+    }
+    main p{
+        scale: 0.8;
+        left: -2vw;
+    }
+    .stats{
+        top: 825px;
+    }
     .researches-cover{
-        top: 1810px;
+        top: 1410px;
     }
     .rankings{
-        top: 3952px;
+        top: 3802px;
     }
+    .achievements-cover{
+        top: 5334px;
+    }
+    .events-cover{
+        top: 6264px;
+    }
+    .milestones-cover
     .patents-cover{
-        top: 3250px;
+        top: 2950px;
+    }
+    .GrantedPatentsImgShadow{
+        display: none;
     }
 }
 
@@ -1322,6 +1518,9 @@ footer a {
     }
     .rankings{
         top: 4002px;
+    }
+    .GrantedPatentsImgShadow{
+        display: none;
     }
 }
 
@@ -1341,7 +1540,7 @@ footer a {
     .header-logo{
         scale: 0.7;
     }
-    #bg-image{
+    #bg-image, #bg-image2{
         top: 57vw;
         width: 106.2vw;;
     }
@@ -1401,5 +1600,31 @@ footer a {
         /* height: 150px; */
         /* scale: 0.6; */
         width: 150px;
+    }
+}
+@media(max-width: 1700px) and (min-width: 1400px){
+    .spacebtwn{
+        padding: 0 70px 0 70px;
+    }
+    .milestones-img{
+        scale: 1.85;
+    }
+}
+@media(max-width: 1400px) and (min-width: 1000px){
+    .spacebtwn{
+        padding: 0 50px 0 50px;
+    }
+    .milestones-img{
+        padding-left: 70px;
+        scale: 2;
+    }
+}
+@media(max-width: 1000px) and (min-width: 768px){
+    .spacebtwn{
+        padding: 0 50px 0 50px;
+    }
+    .milestones-img{
+        padding-left: 70px;
+        scale: 2.4;
     }
 }
